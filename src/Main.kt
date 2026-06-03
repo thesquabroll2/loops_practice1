@@ -14,7 +14,19 @@ fun processCheck(nodeName: String, processId: Int, processRunning: Boolean): Str
         processAttempts += 1
     }
     println("Process checks are finished.")
-    return "Checks are Finished"
+
+    for (processId in 1..5 step 2) {
+        if (processRunning) {
+            if (nodeName == "Shizuku") {
+                println("$nodeName is running successfully for process $processId")
+            } else {
+                println("$nodeName is not running.")
+            }
+        } else {
+            println("This node is not running.")
+        }
+    }
+    return "Checks Complete!"
 }
 
 fun main() {
@@ -25,10 +37,4 @@ fun main() {
     val node1 = processCheck("Shizuku", 1, true)
     val node2 = processCheck("Dhizuku", 3, true)
     val node3 = processCheck("Shizuku", 7, true)
-
-    for (nodeId in 1..5 step 3) {
-        if (isOnline) {
-            if ()
-        }
-    }
 }
