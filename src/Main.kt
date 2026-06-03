@@ -40,9 +40,9 @@ fun main() {
     println("\n=== CHECKING PROCESSES ===")
 
     // Demonstrates calling the same function with different parameters
-    val node1 = processCheck("Shizuku", 1, true, "Node1")
-    val node2 = processCheck("Dhizuku", 3, false, "Node2")
-    val node3 = processCheck("Shizuku", 7, true, "Node3")
+    val node1 = processCheck("Shizuku", 1, true, "8gb pi server")
+    val node2 = processCheck("Dhizuku", 3, false, "4gb pi server")
+    val node3 = processCheck("Shizuku", 7, true, "Akamai Ubuntu server")
 
     println("\n=== RESULTS ===")
     println(node1)
